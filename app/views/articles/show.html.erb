@@ -1,0 +1,9 @@
+<%= form_for [@article, @comment] do |f| %>
+  <%= f.label :author %>:
+  <%= f.text_field :author %><br>
+
+  <%= f.label :body %>:
+  <%= f.text_area :body %><br>
+
+  <%= f.submit %>
+<% end %>
